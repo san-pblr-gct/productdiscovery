@@ -17,6 +17,7 @@ const ProductsStyled = styled.section`
 
 const CategoriesStyled = styled.div`
   postion: fixed;
+  width: 100%;
   background: var(--darkgray);
   display: flex;
   justify-content: space-between;
@@ -28,10 +29,10 @@ const CategoriesStyled = styled.div`
 const HeaderStyled = styled.header`
   position: fixed;
   top: 0;
-  width: 96%;
+  width: 100%;
   background: var(--darkgray);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0.5rem;
   align-items: center;
 `;
@@ -42,10 +43,12 @@ const h1Styled = styled.h1`
 
 function Home() {
   const dispatch = useDispatch();
-  const products = useSelector(state => state.getIn(["products", "data"]));
-  const results = useSelector(state => state.getIn(["products", "results"]));
-  const categories = useSelector(state => state.getIn(["categories", "data"]));
-  const selectedCategory = useSelector(state =>
+  const products = useSelector((state) => state.getIn(["products", "data"]));
+  const results = useSelector((state) => state.getIn(["products", "results"]));
+  const categories = useSelector((state) =>
+    state.getIn(["categories", "data"])
+  );
+  const selectedCategory = useSelector((state) =>
     state.getIn(["categories", "selectedCategory"])
   );
   const productsList = results && results.size ? results : products;
@@ -74,14 +77,14 @@ function Home() {
   return (
     <div>
       <HeaderStyled>
-        <h1>10xConnect</h1>
+        <h1>Product Discovery</h1>
       </HeaderStyled>
       <CategoriesStyled>
         <Category items={categories} selectedCategory={selectedCategory} />
       </CategoriesStyled>
 
       <ProductsStyled>
-        {productsList.map(item => (
+        {productsList.map((item) => (
           <Product key={item.get("code")} item={item} />
         ))}
       </ProductsStyled>

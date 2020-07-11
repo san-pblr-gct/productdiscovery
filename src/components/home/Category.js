@@ -14,9 +14,12 @@ const CategoryStyled = styled.button`
 function Category({ items, selectedCategory }) {
   const dispatch = useDispatch();
   return (
-    <div>
+    <div
+      style={{ justifyContent: "center", display: "flex", flexWrap: "wrap" }}
+    >
+      <CategoryStyled>All</CategoryStyled>
       {items &&
-        items.map(item => {
+        items.map((item) => {
           return (
             <CategoryStyled
               key={item}

@@ -16,7 +16,6 @@
     "lint": "To run ESlint"
   },
   "author": "Santhosh Kumar",
-  "homepage": "https://github.com/parthi22/chainkit-dashboard#readme",
   "dependencies": {
     "@babel/runtime": "^7.5.5",
     "react": "^16.8.6",

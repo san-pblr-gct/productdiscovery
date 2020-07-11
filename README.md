@@ -1,4 +1,4 @@
-# chainkit-dashboard
+# Product discovery
 
 Prerequisites
 

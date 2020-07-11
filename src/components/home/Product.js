@@ -6,12 +6,17 @@ const ProductStyled = styled.article`
   padding: 10px;
   background: var(--lightgray);
   max-width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 const ImageStyled = styled.img`
-  width: 100%;
+  width: 150px;
+  height: 200px;
   background-size: cover;
   background-position: center;
+  align-self: center;
 `;
 const DetailStyled = styled.div`
   padding: 0.5rem 0;
