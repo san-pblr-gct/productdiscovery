@@ -64,7 +64,7 @@
     "stylelint": "^10.1.0",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-dev-server": "^5.2.1"
   },
   "stylelint": {
     "extends": "stylelint-config-recommended"
