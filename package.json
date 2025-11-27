@@ -24,7 +24,7 @@
     "prop-types": "15.6.0",
     "react-redux": "7.1.0",
     "stylelint-config-recommended": "^2.2.0",
-    "react-scripts": "1.0.17",
+    "react-scripts": "5.0.1",
     "redux": "4.0.1",
     "redux-immutable": "4.0.0",
     "styled-components": "4.2.1"
@@ -64,7 +64,7 @@
     "stylelint": "^10.1.0",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-dev-server": "^5.2.2"
   },
   "stylelint": {
     "extends": "stylelint-config-recommended"
